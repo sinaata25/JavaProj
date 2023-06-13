@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="240.0" prefWidth="364.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.amirheshmati.javaproj.StudentController">
+   <children>
+      <ImageView fitHeight="252.0" fitWidth="435.0" layoutX="-15.0" layoutY="-11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@stu.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="getlesson_id" layoutX="36.0" layoutY="26.0" prefHeight="25.0" prefWidth="39.0" />
+      <Button layoutX="86.0" layoutY="26.0" mnemonicParsing="false" onAction="#getLesson" text="get lesson">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="30.0" text="id" textFill="WHITE" />
+      <TextField fx:id="find_name" layoutX="108.0" layoutY="154.0" />
+      <Button layoutX="96.0" layoutY="201.0" mnemonicParsing="false" onAction="#findLesson" text="find lesson">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="193.0" layoutY="201.0" mnemonicParsing="false" onAction="#findTeacher" text="find teacher">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="61.0" layoutY="129.0" prefHeight="25.0" prefWidth="244.0" text="enter a lesson name or teacher name to search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="26.0" text="number of units presented" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button layoutX="256.0" layoutY="52.0" mnemonicParsing="false" onAction="#showNumberOfUnits" text="show">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Button>
+      <Button layoutX="39.0" layoutY="90.0" mnemonicParsing="false" onAction="#calGPA" text="calculate GPA">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
